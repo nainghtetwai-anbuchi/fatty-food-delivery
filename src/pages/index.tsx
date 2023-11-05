@@ -1,14 +1,11 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import MainLayout from "@/components/MainLayout";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 pt-28 ${inter.className}`}
-    >
-      hi mom!!
-    </main>
+    <MainLayout>
+      <Navbar />
+      <div className=" text-4xl">hola</div>
+    </MainLayout>
   );
 }
