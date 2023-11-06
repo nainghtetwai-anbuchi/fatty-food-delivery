@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <MainLayout>
       <Navbar />
-      <div className="min-h-[100vh] overflow-auto  pt-[56px]">
+      <div className=" min-h-[100vh] overflow-auto">
         <div className=" h-[400px]  py-[56px] text-4xl" id="home">
           hola
         </div>

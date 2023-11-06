@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .active {
-  @apply decoration-primary-main text-primary-main underline  decoration-2 underline-offset-8;
+  @apply text-primary-main underline decoration-primary-main  decoration-2 underline-offset-8;
 }
