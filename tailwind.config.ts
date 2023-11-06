@@ -10,8 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         // Define your custom colors here
-        "primary-main": "#FF6501",
-        "primary-light": "#FFE8D9",
+        "primary-main": "#A31F61",
+        "primary-light": "#D61C5B",
+        grey: "#D7D7D7",
+        "grey-dark": "#7B7B7B",
+        bgdark: "#1a1a1a",
         // You can add more custom colors as needed
       },
     },

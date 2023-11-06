@@ -1,14 +1,16 @@
+import LandingPage from "@/components/LandingPage";
 import MainLayout from "@/components/MainLayout";
 import Navbar from "@/components/Navbar";
+import SmallNavbar from "@/components/SmallNavbar";
+import React from "react";
 
 export default function Home() {
   return (
-    <MainLayout>
+    <>
       <Navbar />
+      <SmallNavbar />
       <div className=" min-h-[100vh] overflow-auto">
-        <div className=" h-[400px]  py-[56px] text-4xl" id="home">
-          hola
-        </div>
+        <LandingPage />
         <div className=" h-[400px]  py-[56px] text-4xl" id="promotion">
           Promotion
         </div>
@@ -19,6 +21,6 @@ export default function Home() {
           News
         </div>
       </div>
-    </MainLayout>
+    </>
   );
 }
