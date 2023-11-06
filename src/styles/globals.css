@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active {
+  @apply decoration-primary-main text-primary-main underline  decoration-2 underline-offset-8;
+}
