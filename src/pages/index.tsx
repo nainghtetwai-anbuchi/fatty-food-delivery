@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import LandingPage from "@/components/LandingPage";
 import MainLayout from "@/components/MainLayout";
 import Navbar from "@/components/Navbar";
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       <Navbar />
       <SmallNavbar />
-      <div className=" min-h-[100vh] overflow-auto">
+      <div className=" min-h-[100vh] ">
         <LandingPage />
         <div className=" h-[400px]  py-[56px] text-4xl" id="promotion">
           Promotion
@@ -20,6 +21,7 @@ export default function Home() {
         <div className=" h-[400px]  py-[56px] text-4xl" id="news">
           News
         </div>
+        <Footer />
       </div>
     </>
   );

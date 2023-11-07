@@ -5,9 +5,9 @@ import NavLink from "./NavLink";
 
 const SmallNavbar = () => {
   return (
-    <div className="text-grey-dark mt-[97px] flex h-[64px] items-center bg-black">
+    <div className="mt-[97px] flex h-[64px] items-center bg-black text-grey-dark">
       <SectionLayout>
-        <div className="flex ">
+        <div className="flex">
           <div className="flex gap-4">
             <NavLink name="All" isActive={true} />
             <NavLink name="Trending Now" isActive={false} />
@@ -15,7 +15,7 @@ const SmallNavbar = () => {
             <NavLink name="Artists" isActive={false} />
             <NavLink name="Albums" isActive={false} />
           </div>
-          <div className="text-grey ml-auto flex items-center justify-center gap-2 font-semibold">
+          <div className="ml-auto flex items-center justify-center gap-2 pr-4 font-semibold text-grey">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
