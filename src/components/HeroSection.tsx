@@ -6,11 +6,11 @@ import StoreIcon from "./StoreIcon";
 import GooglePlayIcon from "../icons/google-play-icon.svg";
 import AppStoreIcon from "../icons/app-store-icon.svg";
 
-const LandingPage = () => {
+const HeroSection = () => {
   const { ref } = useInView({ threshold: 0.2 });
 
   return (
-    <div className="hero-section-bg ">
+    <div className="hero-section-bg " id="hero">
       <SectionLayout>
         <div ref={ref} className=" flex min-h-[430px] items-end " id="home">
           <div className="flex w-full justify-between ">
@@ -59,4 +59,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HeroSection;

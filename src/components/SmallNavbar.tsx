@@ -1,17 +1,26 @@
 import React from "react";
-import MainLayout from "./MainLayout";
 import SectionLayout from "./SectionLayout";
 import NavLink from "./NavLink";
 
-const SmallNavbar = () => {
+interface Props {
+  scrollToSection: (sectionId: string) => void;
+}
+
+const SmallNavbar = ({ scrollToSection }: Props) => {
   return (
-    <div className="mt-[97px] flex h-[64px] items-center bg-black text-grey-dark">
+    <div className=" fixed top-0 mt-[97px] flex h-[64px] w-full items-center bg-black text-grey-dark">
       <SectionLayout>
         <div className="flex">
           <div className="flex gap-4">
-            <NavLink name="All" isActive={true} />
-            <NavLink name="Trending Now" isActive={false} />
-            <NavLink name="New Songs" isActive={false} />
+            <div onClick={() => scrollToSection("hero")}>
+              <NavLink name="All" isActive={true} />
+            </div>
+            <div onClick={() => scrollToSection("trendingnow")}>
+              <NavLink name="Trending Now" isActive={false} />
+            </div>
+            <div onClick={() => scrollToSection("newsongs")}>
+              <NavLink name="New Songs" isActive={false} />
+            </div>
             <NavLink name="Artists" isActive={false} />
             <NavLink name="Albums" isActive={false} />
           </div>

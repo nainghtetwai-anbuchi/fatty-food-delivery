@@ -8,7 +8,7 @@ html {
 
 body {
   background-color: #1a1a1a;
-  color: white;
+  color: #d7d7d7;
 }
 
 .hero-section-bg {
@@ -22,7 +22,7 @@ body {
   background-size: cover; /* Adjust this as needed */
 }
 
-.underline {
+.underlined {
   background: linear-gradient(
     270deg,
     rgba(83, 2, 26, 0) 0%,
