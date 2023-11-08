@@ -6,10 +6,10 @@ const cards = new Array(10).fill("");
 
 const TrendingNow = () => {
   return (
-    <div id="trendingnow" className="p-8">
+    <div id="trendingnow" className="p-8 pb-0">
       <SectionLayout>
         <div className="text2xl mb-6 font-medium">Trending Now</div>
-        <div className="xs:grid-cols-2 mb-[40px] grid grid-cols-1 place-items-center gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <div className="xs:grid-cols-2 mb-[40px] grid grid-cols-1 place-items-center gap-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {cards.map((el, idx) => (
             <div key={idx}>
               <Card />

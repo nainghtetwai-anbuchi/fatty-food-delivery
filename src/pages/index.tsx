@@ -31,7 +31,7 @@ export default function Home() {
         <div className=" h-[400px]  py-[56px] text-4xl" id="news">
           News
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );
