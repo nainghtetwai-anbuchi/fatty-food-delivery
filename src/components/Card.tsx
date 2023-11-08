@@ -3,10 +3,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div
-      className="flex flex-col items-center border border-blue-500
-     "
-    >
+    <div className="flex flex-col items-center border border-blue-500">
       <img
         src={"/ed-sheerean.png"}
         className="mb-3 max-h-[80%] w-full object-cover"
