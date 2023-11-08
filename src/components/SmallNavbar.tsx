@@ -16,20 +16,14 @@ const SmallNavbar = ({ scrollToSection }: Props) => {
             <select
               name=""
               id=""
-              className="w-[90%] min-w-[110px] max-w-[200px] "
+              className="w-[90%] min-w-[110px] max-w-[200px] px-8"
             >
-              <option className="w-full" value="">
+              <option className="" value="">
                 All
               </option>
-              <option className="w-full" value="">
-                Trending Now
-              </option>
-              <option className="w-full" value="">
-                Songs
-              </option>
-              <option className="w-full" value="">
-                Artists
-              </option>
+              <option value="">Trending Now</option>
+              <option value="">Songs</option>
+              <option value="">Artists</option>
             </select>
           </div>
 

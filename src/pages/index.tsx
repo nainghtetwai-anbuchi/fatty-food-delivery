@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar />
       <SmallNavbar scrollToSection={scrollToSection} />
       <div className=" min-h-[100vh] pt-[161px] ">
-        {/* <HeroSection /> */}
+        <HeroSection />
         <TrendingNow />
         <NewSongs />
         <div className=" h-[400px]  py-[56px] text-4xl" id="news">
