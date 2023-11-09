@@ -9,10 +9,10 @@ interface Props {
 
 const SmallNavbar = ({ scrollToSection }: Props) => {
   return (
-    <div className=" fixed top-0 mt-[97px] flex h-[64px] w-full items-center bg-black px-4 text-grey-dark">
+    <div className="fixed top-0 z-40 mt-[97px] flex h-[64px] w-full items-center bg-black px-4 text-grey-dark">
       <SectionLayout>
         <div className="flex">
-          <div className=" flex-1 border border-red-500 sm:hidden">
+          {/* <div className=" flex-1 border border-red-500 sm:hidden">
             <select
               name=""
               id=""
@@ -22,12 +22,12 @@ const SmallNavbar = ({ scrollToSection }: Props) => {
                 All
               </option>
               <option value="">Trending Now</option>
-              <option value="">Songs</option>
+              <option value="">New Songs</option>
               <option value="">Artists</option>
             </select>
-          </div>
+          </div> */}
 
-          <div className="hidden gap-4 sm:flex">
+          <div className=" flex gap-4 text-xs xs:text-base">
             <div onClick={() => scrollToSection("hero")}>
               <NavLink name="All" isActive={true} />
             </div>
@@ -37,14 +37,6 @@ const SmallNavbar = ({ scrollToSection }: Props) => {
             <div onClick={() => scrollToSection("newsongs")}>
               <NavLink name="New Songs" isActive={false} />
             </div>
-            <NavLink name="Artists" isActive={false} />
-            <NavLink name="Albums" isActive={false} />
-          </div>
-          <div className="ml-auto  flex items-center justify-center gap-2  font-semibold text-grey">
-            <div className="h-6 w-6">
-              <HeartIcon />
-            </div>
-            <div>My Favourites</div>
           </div>
         </div>
       </SectionLayout>
