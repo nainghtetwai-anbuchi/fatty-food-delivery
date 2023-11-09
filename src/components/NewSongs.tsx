@@ -11,7 +11,7 @@ const NewSongs = () => {
     <div id="newsongs" className="p-8 pt-10">
       <SectionLayout>
         <div className="mb-6 flex justify-between">
-          <div className="text2xl  font-medium">New Songs</div>
+          <div className="text-2xl  font-medium">New Songs</div>
           <Link href={"/new-songs"}>
             <RippleBtn classnames="rounded-[10px] bg-grey px-3 py-1 font-medium text-primary-light">
               More

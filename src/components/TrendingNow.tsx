@@ -11,7 +11,7 @@ const TrendingNow = () => {
     <div id="trendingnow" className="p-8 pb-0">
       <SectionLayout>
         <div className="mb-6 flex justify-between">
-          <div className="text2xl  font-medium">Trending Now</div>
+          <div className="text-2xl  font-medium">Trending Now</div>
           <Link href={"/trending-now"}>
             <RippleBtn classnames="rounded-[10px] bg-grey px-3 py-1 font-medium text-primary-light">
               More
