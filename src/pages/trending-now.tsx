@@ -38,7 +38,7 @@ const TrendingNow = () => {
             </div>
           ))}
         </SectionComponent>
-        <div className="flex justify-end ">
+        <div className="flex justify-center sm:justify-end ">
           <div className="flex items-center justify-center gap-4">
             <RippleBtn classnames="rounded-[10px] bg-grey p-2">
               <LeftArrowIcon />
