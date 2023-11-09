@@ -4,8 +4,8 @@
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              width="full"
-              height="full"
+              width="100%"
+              height="100%"
             >
               <path
                 strokeLinecap="round"
