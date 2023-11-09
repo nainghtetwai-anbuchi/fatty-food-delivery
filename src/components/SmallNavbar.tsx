@@ -5,8 +5,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 const SmallNavbar = () => {
-  const router = useRouter();
-  console.log({ router });
+  const { asPath } = useRouter();
+
   return (
     <div className="fixed top-0 z-10 mt-[97px] flex h-[64px] w-full items-center bg-black px-4 text-grey-dark">
       <SectionLayout>
@@ -28,13 +28,16 @@ const SmallNavbar = () => {
 
           <div className=" flex gap-4 text-xs xs:text-base">
             <Link href={"/"}>
-              <NavLink name="All" isActive={true} />
+              <NavLink name="All" isActive={asPath === "/"} />
             </Link>
             <Link href={"/trending-now"}>
-              <NavLink name="Trending Now" isActive={false} />
+              <NavLink
+                name="Trending Now"
+                isActive={asPath === "/trending-now"}
+              />
             </Link>
             <Link href={"/new-songs"}>
-              <NavLink name="New Songs" isActive={false} />
+              <NavLink name="New Songs" isActive={asPath === "/new-songs"} />
             </Link>
           </div>
         </div>
