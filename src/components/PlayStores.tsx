@@ -7,7 +7,7 @@ const PlayStores = () => {
   return (
     <>
       <SectionLayout>
-        <div className="flex flex-col items-center justify-between gap-6 bg-black p-8 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-6 rounded-[10px] bg-black p-8 md:flex-row">
           <div>
             <div className="mb-2 font-medium">
               Best Ways To Listen To Music!
