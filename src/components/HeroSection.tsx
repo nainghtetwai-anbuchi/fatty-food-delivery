@@ -10,12 +10,56 @@ const HeroSection = () => {
   const { ref } = useInView({ threshold: 0.2 });
 
   return (
-    <div className="hero-section-bg pt-[161px]" id="hero">
+    <div className="hero-section-bg px-4 " id="hero">
       <SectionLayout>
-        <div ref={ref} className="flex min-h-[430px] items-end" id="home">
-          <div className="flex w-full flex-col justify-between sm:flex-row ">
-            <div className="flex flex-1  items-center justify-center ">
-              <div className="min-h-[300px] w-[80%]">
+        <div ref={ref} className="flex min-h-[430px] " id="home">
+          <div className=" mt-auto flex w-full flex-col-reverse sm:flex-row">
+            <div className="flex items-center sm:flex-1">
+              <div className="w-full sm:w-[80%] ">
+                <div className="mb-4 hidden text-2xl font-medium text-black sm:block">
+                  Let me connect your heart to beats!
+                </div>
+                <div className="mb-6 text-2xl font-bold">
+                  SongLink music application
+                </div>
+                <div className="mb-8">
+                  Discover a world of musical possibilities with our music
+                  application, where users and songs unite in perfect harmony.
+                  Explore a vast library of tracks and connect with like-minded
+                  music enthusiasts from around the globe.
+                </div>
+                <div className=" flex xs:gap-2 sm:gap-4">
+                  <StoreIcon storeName="App Store">
+                    <AppStoreIcon />
+                  </StoreIcon>
+                  <StoreIcon storeName="Play Store">
+                    <GooglePlayIcon />
+                  </StoreIcon>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative mb-6 h-[280px] sm:mb-0 sm:h-[430px] sm:flex-1">
+              <Image
+                src={"/ts-half.png"}
+                fill
+                sizes="(min-width: 808px) 50vw, 100vw"
+                style={{
+                  objectFit: "contain", // cover, contain, none
+                }}
+                alt="ts-half"
+                quality={100}
+              />
+            </div>
+            <div className="mb-4 text-2xl font-medium text-black sm:hidden">
+              Let me connect your heart to beats!
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="flex h-full w-full flex-col justify-between border border-green-500 sm:flex-row ">
+            <div className="flex flex-1 items-center justify-center ">
+              <div className="min-w-[240px] w-[80%]">
                 <div className="mb-4 text-2xl font-medium text-black">
                   Let me connect your heart to beats!
                 </div>
@@ -28,7 +72,7 @@ const HeroSection = () => {
                   Explore a vast library of tracks and connect with like-minded
                   music enthusiasts from around the globe.
                 </div>
-                <div className=" xs:gap-2 flex sm:gap-4">
+                <div className=" flex xs:gap-2 sm:gap-4">
                   <StoreIcon storeName="App Store">
                     <AppStoreIcon />
                   </StoreIcon>
@@ -38,22 +82,23 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
+            <div className="flex-1 self-stretch"></div>
 
-            <div className=" flex flex-1 justify-end ">
-              <div className=" h-[430px] w-[full] ">
+            <div className=" flex flex-1 border border-blue-700 ">
+              <div className=" relative  w-full ">
                 <Image
                   src={"/ts-half.png"}
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  style={{ width: "auto", height: "100%" }}
+                  fill
+                  sizes="(min-width: 808px) 50vw, 100vw"
+                  style={{
+                    objectFit: "contain", // cover, contain, none
+                  }}
                   alt="ts-half"
                 />
               </div>
-              {/* <div className=" z-10 h-[430px] w-[360px] bg-[url('/ts-half.png')]  bg-cover bg-center" /> */}
             </div>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </SectionLayout>
     </div>
   );
