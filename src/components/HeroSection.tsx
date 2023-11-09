@@ -1,5 +1,4 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import SectionLayout from "./SectionLayout";
 import Image from "next/image";
 import StoreIcon from "./StoreIcon";
@@ -7,12 +6,10 @@ import GooglePlayIcon from "../icons/google-play-icon.svg";
 import AppStoreIcon from "../icons/app-store-icon.svg";
 
 const HeroSection = () => {
-  const { ref } = useInView({ threshold: 0.2 });
-
   return (
     <div className="hero-section-bg px-8 " id="hero">
       <SectionLayout>
-        <div ref={ref} className="flex min-h-[430px] " id="home">
+        <div className="flex min-h-[430px] " id="home">
           <div className=" mt-auto flex w-full flex-col-reverse sm:flex-row">
             <div className="flex items-center sm:flex-1">
               <div className="w-full sm:w-[80%] ">
@@ -28,7 +25,7 @@ const HeroSection = () => {
                   Explore a vast library of tracks and connect with like-minded
                   music enthusiasts from around the globe.
                 </div>
-                <div className=" flex flex-col items-center justify-center gap-2 xs:flex-row sm:gap-4">
+                <div className=" flex flex-col items-center justify-center gap-2 xs:flex-row sm:justify-start sm:gap-4">
                   <StoreIcon storeName="App Store">
                     <AppStoreIcon />
                   </StoreIcon>
