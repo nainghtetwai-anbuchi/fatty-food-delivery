@@ -35,7 +35,7 @@ export const Tooltip = ({
         }`}
       >
         <div className=" -mb-2 mr-2 h-4 w-4 rotate-45 bg-gray-600" />
-        <div className="whitespace-no-wrap relative z-10 rounded-md bg-gray-600  p-4 text-xs leading-none text-white shadow-lg">
+        <div className="whitespace-no-wrap relative  rounded-md bg-gray-600  p-4 text-xs leading-none text-white shadow-lg">
           {message}
         </div>
       </div>

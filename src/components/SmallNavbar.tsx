@@ -9,7 +9,7 @@ interface Props {
 
 const SmallNavbar = ({ scrollToSection }: Props) => {
   return (
-    <div className="fixed top-0 z-40 mt-[97px] flex h-[64px] w-full items-center bg-black px-4 text-grey-dark">
+    <div className="fixed top-0 z-10 mt-[97px] flex h-[64px] w-full items-center bg-black px-4 text-grey-dark">
       <SectionLayout>
         <div className="flex">
           {/* <div className=" flex-1 border border-red-500 sm:hidden">
