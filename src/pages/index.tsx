@@ -10,15 +10,10 @@ import React from "react";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <SmallNavbar />
-      <div className=" min-h-[100vh] pt-[161px] ">
-        <HeroSection />
-        <TrendingNow />
-        <NewSongs />
-        <Footer />
-      </div>
-    </>
+    <MainLayout>
+      <HeroSection />
+      <TrendingNow />
+      <NewSongs />
+    </MainLayout>
   );
 }

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-grey">
+    <div className="mt-auto bg-black text-grey">
       <SectionLayout>
         <div className="flex h-[228px] flex-col items-center justify-evenly px-2 ">
           <div className="text-xs ">Follow us on</div>
@@ -16,28 +16,28 @@ const Footer = () => {
             <a
               href={"https://google.com"}
               target="_blank"
-              className="xs:w-[54px] xs:h-[52px] h-[36px] w-[38px]"
+              className="h-[36px] w-[38px] xs:h-[52px] xs:w-[54px]"
             >
               <FbIcon />
             </a>
             <a
               href={"https://google.com"}
               target="_blank"
-              className="xs:w-[54px] xs:h-[52px] h-[36px] w-[38px]"
+              className="h-[36px] w-[38px] xs:h-[52px] xs:w-[54px]"
             >
               <ViberIcon />
             </a>
             <a
               href={"https://google.com"}
               target="_blank"
-              className="xs:w-[54px] xs:h-[52px] h-[36px] w-[38px]"
+              className="h-[36px] w-[38px] xs:h-[52px] xs:w-[54px]"
             >
               <TelegramIcon />
             </a>
             <a
               href={"https://google.com"}
               target="_blank"
-              className="xs:w-[54px] xs:h-[52px] h-[36px] w-[38px]"
+              className="h-[36px] w-[38px] xs:h-[52px] xs:w-[54px]"
             >
               <YoutubeIcon />
             </a>
@@ -46,7 +46,7 @@ const Footer = () => {
             <div className=" flex h-full w-full items-center self-stretch">
               <div className="h-[0.5px] w-full bg-grey"></div>
             </div>
-            <div className="xs:text-base whitespace-nowrap text-xs">
+            <div className="whitespace-nowrap text-xs xs:text-base">
               Copyright &#169; All Rights reserved. World Records.com
             </div>
             <div className=" flex h-full w-full items-center self-stretch">

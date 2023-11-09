@@ -1,7 +1,8 @@
+import MainLayout from "@/components/MainLayout";
 import React from "react";
 
 const TrendingNow = () => {
-  return <div>TrendingNow</div>;
+  return <MainLayout>TrendingNow</MainLayout>;
 };
 
 export default TrendingNow;
