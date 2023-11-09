@@ -42,16 +42,12 @@ const Footer = () => {
               <YoutubeIcon />
             </a>
           </div>
-          <div className="flex h-[24px] w-full max-w-[1040px] items-end justify-center gap-2 ">
-            <div className=" flex h-full w-full items-center self-stretch">
-              <div className="h-[0.5px] w-full bg-grey"></div>
+          <div className="flex h-[24px] w-full max-w-[1040px] items-center justify-center gap-2 ">
+            <div className="h-[0.5px] w-full bg-grey"></div>
+            <div className="whitespace-nowrap text-[0.6rem] xs:text-xs sm:text-base">
+              COPYRIGHT &#169; All Rights reserved. World Records.com
             </div>
-            <div className="whitespace-nowrap text-xs xs:text-base">
-              Copyright &#169; All Rights reserved. World Records.com
-            </div>
-            <div className=" flex h-full w-full items-center self-stretch">
-              <div className="h-[0.5px] w-full bg-grey"></div>
-            </div>
+            <div className="h-[0.5px] w-full bg-grey"></div>
           </div>
         </div>
       </SectionLayout>
