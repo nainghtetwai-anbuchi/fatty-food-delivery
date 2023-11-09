@@ -36,6 +36,7 @@ body {
     url("/hero-bg.png");
   background-color: #c71551; /* Red background color with 50% opacity */
   background-size: cover; /* Adjust this as needed */
+  background-position: right;
 }
 
 .underlined {
