@@ -19,6 +19,7 @@ const config: Config = {
         "primary-dark": "#AE4568",
         "primary-main": "#A31F61",
         "primary-light": "#D61C5B",
+        "primary-matte": "#c71551",
         grey: "#D7D7D7",
         "grey-dark": "#7B7B7B",
         bgdark: "#1a1a1a",
