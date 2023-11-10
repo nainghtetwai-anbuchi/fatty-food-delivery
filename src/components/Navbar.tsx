@@ -1,17 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import RippleBtn from "./RippleBtn";
 import SectionLayout from "./SectionLayout";
 import SearchIcon from "../icons/search-icon.svg";
 import UserIcon from "../icons/user.svg";
 import { Tooltip } from "./Tooltip";
+import ChevronDown from "../icons/chevron_down_arrow.svg";
+import LogoutIcon from "../icons/log_out.svg";
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = React.useState("Home");
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    const text = (e.target as HTMLElement).textContent;
-    text && setActiveLink(text);
-  };
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [showProfile, setShowProfile] = useState(false);
 
   const btns = (
     <div>
@@ -49,18 +47,57 @@ const Navbar = () => {
               />
             </div>
             <div className="h-8 w-[0.5px] bg-grey"></div>
-            <div className=" sm:hidden">
-              <Tooltip message={btns}>
-                <UserIcon />
-              </Tooltip>
-            </div>
-            <RippleBtn classnames=" hidden sm:flex  items-center gap-3 bg-transparent p-2">
-              <UserIcon />
-              <div>Log In</div>
-            </RippleBtn>
-            <RippleBtn classnames="hidden sm:block bg-grey text-black px-4 py-3">
-              Register
-            </RippleBtn>
+            {isLoggedIn ? (
+              <div className="relative">
+                <RippleBtn classnames="bg-transparent p-2">
+                  <div
+                    onClick={() => setShowProfile((pre) => !pre)}
+                    className="flex items-center gap-3 "
+                  >
+                    <div className="h-6 w-6 rounded-full bg-[url('/ed-sheerean.png')] bg-cover" />
+                    <div>
+                      <span>Ed Sheeran</span>'s Account
+                    </div>
+                    <div className={`${showProfile && "rotate-180"}`}>
+                      <ChevronDown />
+                    </div>
+                  </div>
+                </RippleBtn>
+                {showProfile && (
+                  <div className="absolute -bottom-6 right-0 w-[400px] translate-y-full rounded-[10px] border border-grey bg-bgdark p-6">
+                    <div className="flex items-center gap-4">
+                      <div className="h-16 w-16 rounded-full bg-[url('/ed-sheerean.png')] bg-cover  " />
+                      <div>
+                        <div className="mb-2">Ed Sheeran</div>
+                        <RippleBtn classnames="bg-grey border border-primary-matte px-3 py-1 text-primary-matte font-medium">
+                          Edit Profile
+                        </RippleBtn>
+                      </div>
+                    </div>
+                    <div className="underlined my-6 h-[2px] w-full"></div>
+                    <RippleBtn classnames="p-2 flex gap-4 w-fit">
+                      <LogoutIcon />
+                      <span>Log Out</span>
+                    </RippleBtn>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <div className=" sm:hidden">
+                  <Tooltip message={btns}>
+                    <UserIcon />
+                  </Tooltip>
+                </div>
+                <RippleBtn classnames=" hidden sm:flex  items-center gap-3 bg-transparent p-2">
+                  <UserIcon />
+                  <div>Log In</div>
+                </RippleBtn>
+                <RippleBtn classnames="hidden sm:block bg-grey text-black px-4 py-3">
+                  Register
+                </RippleBtn>
+              </>
+            )}
           </div>
         </div>
       </SectionLayout>
